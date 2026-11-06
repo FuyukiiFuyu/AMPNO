@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação dos Moradores do Parque Novo Oratório - AMPNO</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Biblioteca QR Code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- CABEÇALHO / NAVBAR -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <!-- Imagem do Logotipo Original -->
+                <img src="LOGO DO PO.jpg" alt="Logo AMPNO" class="h-14 w-14 rounded-full object-cover shadow-sm border border-slate-200">
+                <div>
+                    <span class="block font-bold text-slate-900 text-base sm:text-lg leading-tight">AMPNO</span>
+                    <span class="text-xs text-slate-500 font-medium">Associação de Moradores</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+                <a href="#sobre" class="hover:text-emerald-700 transition">Sobre</a>
+                <a href="#redes" class="hover:text-emerald-700 transition">Redes Sociais</a>
+                <a href="#patrocinadores" class="hover:text-emerald-700 transition">Apoiadores</a>
+                <a href="#sugestoes" class="hover:text-emerald-700 transition">Sugestões</a>
+                <a href="#contato" class="hover:text-emerald-700 transition">Contato</a>
+            </div>
+            <div>
+                <a href="https://g.page/r/CUt-ofS2xnW-EAE/review" target="_blank" class="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-sm transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-star"></i> Avaliar no Google
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (DESTAQUE) -->
+    <section class="relative bg-white overflow-hidden py-16 lg:py-24 border-b border-slate-200">
+        <!-- Detalhe decorativo sutil nas cores da bandeira -->
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-50 rounded-full blur-3xl -z-10 opacity-60"></div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-amber-50 rounded-full blur-3xl -z-10 opacity-60"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider border border-emerald-200">
+                        <i class="fa-solid fa-hands-holding-child"></i> Comunidade Unida
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                        Associação dos Moradores do Parque Novo Oratório
+                    </h1>
+                    <p class="text-xl font-medium text-emerald-700 italic">
+                        "A Associação é para todos"
+                    </p>
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                        Trabalhando em conjunto para o desenvolvimento, bem-estar e união dos moradores do nosso bairro. Participe, sugira e fortaleça a nossa comunidade!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="https://wa.me/5511989341315" target="_blank" class="inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3.5 rounded-xl shadow-md transition">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Fale pelo WhatsApp
+                        </a>
+                        <a href="https://g.page/r/CUt-ofS2xnW-EAE/review" target="_blank" class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-medium px-6 py-3.5 rounded-xl shadow-xs transition">
+                            <i class="fa-solid fa-star text-amber-500"></i> Deixar Avaliação Google
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative p-3 bg-white rounded-3xl shadow-xl border border-slate-100 max-w-xs w-full text-center">
+                        <img src="LOGO DO PO.jpg" alt="Logotipo AMPNO" class="w-full h-auto rounded-2xl shadow-inner object-cover">
+                        <div class="mt-4 pb-2">
+                            <h3 class="font-bold text-slate-900 text-lg">AMPNO</h3>
+                            <p class="text-xs text-slate-500">União, Trabalho e Comunidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE / IMPACTO -->
+    <section id="sobre" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Nosso Compromisso</h2>
+                <p class="mt-3 text-slate-600">Construindo melhorias contínuas para o Parque Novo Oratório através da participação cidadã.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-slate-200/80 text-center">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Voz Ativa</h3>
+                    <p class="text-slate-600 text-sm">Canal direto entre os moradores e as melhorias necessárias na infraestrutura e segurança do bairro.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-slate-200/80 text-center">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Comunidade Unida</h3>
+                    <p class="text-slate-600 text-sm">Eventos, apoio social e integração para todas as famílias residentes no Parque Novo Oratório.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-slate-200/80 text-center">
+                    <div class="w-12 h-12 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Parcerias Locais</h3>
+                    <p class="text-slate-600 text-sm">Valorização do comércio local e apoio de patrocinadores comprometidos com o crescimento da região.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDES SOCIAIS E QR CODES -->
+    <section id="redes" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Acompanhe Nossas Redes Sociais</h2>
+                <p class="mt-3 text-slate-600">Aponte a câmara do seu telemóvel para o QR Code ou clique diretamente nos botões abaixo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Instagram Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center flex flex-col items-center shadow-xs">
+                    <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg">Instagram</h3>
+                    <p class="text-xs text-slate-500 mb-4">@ampno.oficial</p>
+                    <div id="qrcode-instagram" class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 mb-4"></div>
+                    <a href="https://www.instagram.com/ampno.oficial" target="_blank" class="w-full mt-auto bg-pink-600 hover:bg-pink-700 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">
+                        Seguir no Instagram
+                    </a>
+                </div>
+
+                <!-- Facebook Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center flex flex-col items-center shadow-xs">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg">Facebook</h3>
+                    <p class="text-xs text-slate-500 mb-4">/associacaompno</p>
+                    <div id="qrcode-facebook" class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 mb-4"></div>
+                    <a href="https://www.facebook.com/associacaompno" target="_blank" class="w-full mt-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">
+                        Curtir Página
+                    </a>
+                </div>
+
+                <!-- WhatsApp Card -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-center flex flex-col items-center shadow-xs">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg">WhatsApp</h3>
+                    <p class="text-xs text-slate-500 mb-4">(11) 98934-1315</p>
+                    <div id="qrcode-whatsapp" class="bg-white p-3 rounded-xl shadow-sm border border-slate-200 mb-4"></div>
+                    <a href="https://wa.me/5511989341315" target="_blank" class="w-full mt-auto bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-xl text-sm transition">
+                        Enviar Mensagem
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATROCINADORES / APOIADORES -->
+    <section id="patrocinadores" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-3">Nossos Patrocinadores e Apoiadores</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto mb-10">Empresas e parceiros que apoiam as iniciativas e o desenvolvimento da nossa comunidade.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs flex items-center justify-center h-28 text-slate-400 font-semibold text-sm">
+                    [Seu Patrocinador 1]
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs flex items-center justify-center h-28 text-slate-400 font-semibold text-sm">
+                    [Seu Patrocinador 2]
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs flex items-center justify-center h-28 text-slate-400 font-semibold text-sm">
+                    [Seu Patrocinador 3]
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs flex items-center justify-center h-28 text-slate-400 font-semibold text-sm">
+                    [Seu Patrocinador 4]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE SUGESTÕES / OUVIDORIA -->
+    <section id="sugestoes" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-emerald-500 rounded-full blur-3xl opacity-20"></div>
+                <div class="relative z-10">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-3">Caixa de Sugestões e Ouvidoria</h2>
+                    <p class="text-slate-300 mb-8 text-sm sm:text-base">Tem alguma sugestão, reclamação ou elogio para melhorar o Parque Novo Oratório? Envie sua mensagem para a diretoria.</p>
+                    
+                    <form onsubmit="enviarSugestao(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Seu Nome (Opcional)</label>
+                                <input type="text" id="nomeSugestao" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500" placeholder="Ex: João da Silva">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">E-mail ou Telefone (Opcional)</label>
+                                <input type="text" id="contatoSugestao" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500" placeholder="Ex: (11) 99999-9999">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Sua Mensagem / Sugestão *</label>
+                            <textarea id="textoSugestao" rows="4" required class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-emerald-500" placeholder="Escreva aqui a sua ideia ou relato..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-3 px-6 rounded-xl transition shadow-md">
+                            <i class="fa-solid fa-paper-plane mr-2"></i> Enviar Sugestão
+                        </button>
+                    </form>
+                    <div id="mensagemSucesso" class="hidden mt-4 p-4 bg-emerald-900/50 border border-emerald-500 text-emerald-200 text-sm rounded-xl text-center">
+                        Obrigado! A sua sugestão foi enviada com sucesso para a associação.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO E MAPA -->
+    <section id="contato" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Onde Estamos & Contato</h2>
+                <p class="mt-3 text-slate-600">Venha nos visitar ou entre em contacto pelos canais oficiais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-2xl shadow-xs border border-slate-200 space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">Endereço</h3>
+                            <p class="text-slate-600 text-sm">Rua Jerusalém 100, Santo André, SP<br>CEP: 09260-140</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">E-mail</h3>
+                            <p class="text-slate-600 text-sm">associacaopno@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">WhatsApp / Telefone</h3>
+                            <p class="text-slate-600 text-sm">(11) 98934-1315</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa Incorporado Google Maps -->
+                <div class="h-80 w-full rounded-2xl overflow-hidden shadow-xs border border-slate-200">
+                    <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" src="https://maps.google.com/maps?q=Rua%20Jerusal%C3%A9m%20100,%20Santo%20Andr%C3%A9,%20SP&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-white border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-2">
+            <p>&copy; 2026 Associação dos Moradores do Parque Novo Oratório - AMPNO. Todos os direitos reservados.</p>
+            <p class="text-xs text-slate-400">A Associação é para todos</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE GERAÇÃO DOS QR CODES -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            new QRCode(document.getElementById("qrcode-instagram"), {
+                text: "https://www.instagram.com/ampno.oficial",
+                width: 110,
+                height: 110,
+            });
+            new QRCode(document.getElementById("qrcode-facebook"), {
+                text: "https://www.facebook.com/associacaompno",
+                width: 110,
+                height: 110,
+            });
+            new QRCode(document.getElementById("qrcode-whatsapp"), {
+                text: "https://wa.me/5511989341315",
+                width: 110,
+                height: 110,
+            });
+        });
+
+        function enviarSugestao(event) {
+            event.preventDefault();
+            const texto = document.getElementById("textoSugestao").value;
+            const nome = document.getElementById("nomeSugestao").value || "Anônimo";
+            
+            // Simulação de envio bem-sucedido e alerta no WhatsApp da diretoria
+            document.getElementById("mensagemSucesso").classList.remove("hidden");
+            setTimeout(() => {
+                document.getElementById("mensagemSucesso").classList.add("hidden");
+                event.target.reset();
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

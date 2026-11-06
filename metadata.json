@@ -1,0 +1,6 @@
+{
+  "name": "AMPNO - Associação dos Moradores do Parque Novo Oratório",
+  "description": "Portal oficial da Associação dos Moradores do Parque Novo Oratório em Santo André - SP. Conheça nossos projetos, redes sociais, envie sugestões e participe da nossa comunidade.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
